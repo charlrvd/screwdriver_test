@@ -1,4 +1,6 @@
 # Job definition block
+shared:
+  image: busybox:latest
 jobs:
   main:
     requires: [~pr, ~commit]
