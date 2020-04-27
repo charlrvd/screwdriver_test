@@ -1,6 +1,6 @@
 # Job definition block
 shared:
-  image: busybox:latest
+  image: fedora:latest
 jobs:
   main:
     requires: [~pr, ~commit]
