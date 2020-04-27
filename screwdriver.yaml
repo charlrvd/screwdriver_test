@@ -15,4 +15,5 @@ jobs:
     steps:
       - make_target: echo make greetings
       - get-metadata: meta get example
+      - exec_perm: chmod +x ./my_script.sh
       - run_arbitrary_script: ./my_script.sh
