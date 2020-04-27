@@ -9,6 +9,7 @@ jobs:
       - export: export GREETING="Hello, world!"
       - hello: echo $GREETING
       - set-metadata: meta set example.coverage 99.95
+      - install_find: dnf install find # otherwise build cleanup fails
   second_job:
     requires: [main] # second_job will run after main job is done
     steps:
